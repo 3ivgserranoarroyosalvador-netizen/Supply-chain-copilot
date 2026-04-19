@@ -32,15 +32,20 @@ def get_dataset_summary():
     total = len(df)
     cols = df.columns.tolist()
     numeric_cols = df.select_dtypes(include='number').columns.tolist()
+    text_cols = df.select_dtypes(include='object').columns.tolist()
     nulls = df.isnull().sum().sum()
-    
+    sample = df.head(3).to_string()
+
     summary = f"""
-    Dataset cargado con {total:,} filas y {len(cols)} columnas.
+    Dataset con {total:,} filas y {len(cols)} columnas.
     - Columnas disponibles: {', '.join(cols)}
     - Columnas numéricas: {', '.join(numeric_cols)}
+    - Columnas de texto: {', '.join(text_cols)}
     - Valores nulos totales: {nulls}
+    - Muestra de los primeros 3 registros:
+    {sample}
     """
-    
+    return summary
     # Info extra si es el dataset de supply chain
     if 'Late_delivery_risk' in df.columns:
         late = len(df[df['Late_delivery_risk'] == 1])
