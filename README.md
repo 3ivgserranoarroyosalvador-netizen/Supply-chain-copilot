@@ -5,7 +5,7 @@ Asistente de IA para análisis de cadena de suministro usando RAG + LLMs.
 - Detecta patrones de retraso y riesgo operacional
 - Funciona con cualquier dataset CSV
 - Genera insights ejecutivos automáticamente
-# Link
+# Link del proyecto
 [supply-chain-copilot-qnsn2beftchjckox6w3gfd.streamlit.app](https://supply-chain-copilot-qnsn2beftchjckox6w3gfd.streamlit.app)
 # Herramientas
 - **Python** — procesamiento de datos
@@ -33,5 +33,3 @@ El LLM no accede al CSV directamente: Copilot recibe un resumen de texto del dat
 Sin memoria entre sesiones: se pierde la memoria al momento de cerrar y volver abrir el navegador
 Depende de internet
 Límite de tokens
-# Preview
-![Supply Chain Copilot](https://i.imgur.com/placeholder.png)
