@@ -5,6 +5,8 @@ Asistente de IA para análisis de cadena de suministro usando RAG + LLMs.
 - Detecta patrones de retraso y riesgo operacional
 - Funciona con cualquier dataset CSV
 - Genera insights ejecutivos automáticamente
+# Link
+[supply-chain-copilot-qnsn2beftchjckox6w3gfd.streamlit.app](https://supply-chain-copilot-qnsn2beftchjckox6w3gfd.streamlit.app)
 # Herramientas
 - **Python** — procesamiento de datos
 - **Pandas** — limpieza y análisis del dataset
