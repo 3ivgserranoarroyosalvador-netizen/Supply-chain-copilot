@@ -29,7 +29,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 # Limitaciones
-El LLM no accede al CSV directamente: Copilot recibe un resumen de texto del dataset, es decir no responde con exactitud.
+El LLM no accede al CSV directamente: Groq recibe un resumen de texto del dataset, es decir no responde con exactitud.
 Sin memoria entre sesiones: se pierde la memoria al momento de cerrar y volver abrir el navegador
 Depende de internet
 Límite de tokens
